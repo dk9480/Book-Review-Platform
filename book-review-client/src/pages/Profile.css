@@ -1,0 +1,206 @@
+/* Profile.css */
+.profile-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-container h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.profile-container h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #3498db, #9b59b6);
+  border-radius: 2px;
+}
+
+.profile-container p {
+  font-size: 1.1rem;
+  color: #34495e;
+  margin: 0.8rem 0;
+  padding: 0.8rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.profile-container strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.logout-btn {
+  display: block;
+  margin: 1.5rem auto;
+  padding: 0.8rem 2rem;
+  background: linear-gradient(90deg, #e74c3c, #c0392b);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+}
+
+.profile-container h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin: 2rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.review-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.review-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.review-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.review-item strong {
+  font-size: 1.2rem;
+  color: #3498db;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.review-item i {
+  color: #7f8c8d;
+  font-style: normal;
+  display: block;
+  margin: 0.8rem 0;
+  line-height: 1.5;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.rating-input {
+  padding: 0.8rem;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 80px;
+}
+
+.comment-input {
+  padding: 0.8rem;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  min-height: 100px;
+  resize: vertical;
+}
+
+.save-btn, .cancel-btn, .edit-btn, .delete-btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.save-btn {
+  background: linear-gradient(90deg, #2ecc71, #27ae60);
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.save-btn:hover {
+  background: linear-gradient(90deg, #27ae60, #219653);
+}
+
+.cancel-btn {
+  background: linear-gradient(90deg, #95a5a6, #7f8c8d);
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: linear-gradient(90deg, #7f8c8d, #718093);
+}
+
+.edit-btn {
+  background: linear-gradient(90deg, #3498db, #2980b9);
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.edit-btn:hover {
+  background: linear-gradient(90deg, #2980b9, #1a6ca8);
+}
+
+.delete-btn {
+  background: linear-gradient(90deg, #e74c3c, #c0392b);
+  color: white;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(90deg, #c0392b, #a83226);
+}
+
+/* Empty state styling */
+.profile-container > p {
+  text-align: center;
+  color: #7f8c8d;
+  font-style: italic;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .review-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+
