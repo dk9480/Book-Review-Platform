@@ -91,5 +91,5 @@ B.Tech – Completed 3rd Year, Entering Final Year
 ## 📌 Notes
 - Sensitive `.env` configuration is not pushed to GitHub
 - Admin routes are protected (role-based access)
-- UI is clean and partially responsive
+- UI is clean and partially responsive.
 
