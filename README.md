@@ -38,29 +38,29 @@ cd mern-book-review-app
 
 2️⃣ Install Dependencies
 # Frontend
-npm install
+  - npm install
 
 # Backend
-cd backend
-npm install
+  - cd backend
+  - npm install
 
 
 3️⃣ Set Up Environment Variables
 Create a .env file inside the /backend folder:
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
-PORT=5000
+- MONGO_URI=your_mongodb_uri
+- JWT_SECRET=your_jwt_secret
+- PORT=5000
 ✅ .env is already included in .gitignore
 
 
 ▶️ Run the App
 🌐 Backend
-cd backend
-npm start
+   - cd backend
+   - npm run dev
 
 
 💻 Frontend
-npm start
+   - npm start
 
 
 📁 Folder Structure
@@ -80,9 +80,8 @@ npm start
 
 
 🔐 Admin Credentials (For Testing)
-Email: admin@example.com
-
-Password: admin123
+   - Email: admin@example.com
+   - Password: admin123
 
 🧑‍🎓 Developed By
 DK Vijendra Kumar
