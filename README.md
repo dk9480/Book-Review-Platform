@@ -32,7 +32,7 @@ A full-stack MERN application where users can register, login, explore books, wr
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/My-USERNAME/mern-book-review-app.git
+git clone https://github.com/dk9480/mern-book-review-app.git
 cd mern-book-review-app
 
 
