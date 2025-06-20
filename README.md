@@ -1,28 +1,29 @@
 # 📚 MERN Book Review App
 
-A full-stack MERN application where users can register, login, explore books, write reviews, and manage their profiles. Admin users can manage books via a dashboard.
+A full-stack MERN application where users can register, login, explore books, write reviews, and manage their profiles.  
+**Admin users** can manage books via a dashboard.
 
 ---
 
 ## 🚀 Features
 
 - 🔐 **Authentication** with JWT (Login/Register)
-- 📚 **View Books** with search and genre filter
+- 📚 **Browse Books** with search and genre filter
 - ✍️ **Write, Edit, Delete Reviews** (only by logged-in users)
 - 👤 **User Profile** with personal review history
-- 🛠️ **Admin Panel** for adding, editing, deleting books
+- 🛠️ **Admin Panel** to manage books (Add/Edit/Delete)
 - 💾 **MongoDB Atlas** cloud database
-- 🧼 **Protected Routes** based on user role
+- 🧼 **Protected Routes** based on user role (User/Admin)
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React.js, Axios, React Router
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB (with Mongoose)
-- **Authentication:** JWT (JSON Web Token)
-- **Styling:** Custom CSS
+- **Frontend**: React.js, Axios, React Router
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB (Mongoose)
+- **Authentication**: JWT (JSON Web Token)
+- **Styling**: Custom CSS
 
 ---
 
@@ -31,22 +32,26 @@ A full-stack MERN application where users can register, login, explore books, wr
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/mern-book-review-app.git
+git clone https://github.com/YOUR-USERNAME/mern-book-review-app.git
 cd mern-book-review-app
 
 
 2️⃣ Install Dependencies
-npm install      # for frontend
+# Frontend
+npm install
+
+# Backend
 cd backend
-npm install      # for backend
+npm install
 
 
 3️⃣ Set Up Environment Variables
-Create a .env file in the backend folder:
+Create a .env file inside the /backend folder:
 MONGO_URI=your_mongodb_uri
 JWT_SECRET=your_jwt_secret
 PORT=5000
-✅ Make sure .env is listed in .gitignore (already added)
+✅ .env is already included in .gitignore
+
 
 ▶️ Run the App
 🌐 Backend
@@ -58,35 +63,34 @@ npm start
 npm start
 
 
-📁 Folder Structure (Important Folders)
+📁 Folder Structure
 /client
   └── src
       ├── components
       ├── pages
       ├── context
       ├── App.js
-      ├── index.js
+      └── index.js
+
 /backend
   ├── models
   ├── routes
   ├── controllers
-  ├── server.js
+  └── server.js
 
 
 🔐 Admin Credentials (For Testing)
 Email: admin@example.com
+
 Password: admin123
 
-
-🧑‍🎓 Developed by
+🧑‍🎓 Developed By
 DK Vijendra Kumar
 B.Tech – Completed 3rd Year, Entering Final Year
-📧 Email: your.email@example.com
-🌐 GitHub: your-username
+🌐 GitHub: https://github.com/dk9480
 
-📌 Notes
-.env and sensitive configs are not pushed to GitHub
+## 📌 Notes
+- Sensitive `.env` configuration is not pushed to GitHub
+- Admin routes are protected (role-based access)
+- UI is clean and partially responsive
 
-Admin-only routes are protected both on backend and frontend
-
-Responsive layout and clean UI included
