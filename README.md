@@ -35,7 +35,7 @@ git clone https://github.com/your-username/mern-book-review-app.git
 cd mern-book-review-app
 
 
-*2️⃣ Install Dependencies**
+2️⃣ Install Dependencies
 npm install      # for frontend
 cd backend
 npm install      # for backend
